@@ -1,6 +1,8 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
+  // uncomment line below in case you want to change entry point
+  // entry: './src_1/index.js', // to change entry point
   module: {
     rules: [
       {
@@ -27,7 +29,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./src/index.html",
+      // change it in case you want to change entry point such that; 
+      // template: "./src_1/index.html", 
+      template: "./src/index.html", 
       filename: "./index.html"
     }),
     new MiniCssExtractPlugin({

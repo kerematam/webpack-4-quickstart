@@ -1,12 +1,12 @@
 {
-  "name": "webpack-4-quickstart",
+  "name": "twitter-clone",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "dev": "webpack --mode development --output ./dist/main.js",
+    "build": "webpack --mode production --output ./dist/main.js"
   },
   "keywords": [],
   "author": "",

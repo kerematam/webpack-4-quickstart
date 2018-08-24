@@ -8,7 +8,7 @@ Move into directory and run :
 $ npm i && npm run start
 ```
 
-To change entry point use output flag in `package.json` under scripts :
+To change output file; use output flag in `package.json` under scripts :
 
 ```json
 "scripts": {
@@ -16,4 +16,10 @@ To change entry point use output flag in `package.json` under scripts :
   "build": "webpack --mode production ./foo/src/js/index.js --output ./foo/main.js"
 }
 ```
+
+To change entry point; 
+    
+* add ;  `entry: './foo/index.js',` in module export section of `webpack.config.js`.
+* change ; `"./foo/index.html",` in plugins section of `webpack.config.js`.
+
 
